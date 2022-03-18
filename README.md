@@ -245,13 +245,13 @@ With Flutter:
 flutter pub add webview_flutter
 ```
 This will add a line like this to your package's pubspec.yaml (and run an implicit `flutter pub get`):
-```yaml
+```json
 dependencies:
 	webview_flutter: ^3.0.1
 ```
 Alternatively, your editor might support `flutter pub get`. Check the docs for your editor to learn more.
 
-Now in your Dart code, you can use:
+Now in your **Dart** code, you can use:
 ```dart
 import 'package:webview_flutter/webview_flutter.dart';
 ```
@@ -261,7 +261,7 @@ With Flutter:
 dart pub add cookie
 ```
 This will add a line like this to your package's pubspec.yaml (and run an implicit `flutter pub get`):
-```yaml
+```json
 dependencies:
 	cookie: ^0.0.4
 ```
