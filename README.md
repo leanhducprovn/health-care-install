@@ -3,44 +3,44 @@
 ### Backend development
 <p align="left">  
   <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/leanhducprovn/health-care-install/main/images/backend.png" alt="backend development" width="" height="130"/> 
+    <img src="https://raw.githubusercontent.com/leanhducprovn/health-care-install/main/src/public/images/backend.png" alt="backend development" width="" height="130"/> 
   </a>
 </p>
  
 #### NodeJS
-- Cài đặt NodeJS trên Window hoặc MacOS
+Cài đặt NodeJS trên Window hoặc MacOS
 Truy cập vào website chính thức của NodeJS, tải bản cài đặt mới nhất về máy tính và thực hiện cài đặt như bình thường
 ```
 https://nodejs.org/
 ```
- - Để kiểm tra cài đặt đã thành công hay chưa, bằng cách gõ lệnh:
+Để kiểm tra cài đặt đã thành công hay chưa, bằng cách gõ lệnh:
 ```
 node -v
 ```
-- Để kiểm tra NPM - Công cụ quản lý package của NodeJS đã cài đặt thành công hay chưa, bằng cách gõ lệnh:.
+Để kiểm tra NPM - Công cụ quản lý package của NodeJS đã cài đặt thành công hay chưa, bằng cách gõ lệnh:.
 ```
 npm -v
 ```
-- Tạo thư mục chứa project
+Tạo thư mục chứa project
 ```
 mkdir health-care
 ```
-- Tạo file `package.json` trong thư mục gốc của project
+Tạo file `package.json` trong thư mục gốc của project
 ```
 npm init
 ```
 #### Express
-- Để cài đặt Express framework sử dụng npm như sau:
+Để cài đặt Express framework sử dụng npm như sau:
 ```
 npm install express --save
 ```
-- Cài thêm một số module quan trọng đi cùng với express như:
+Cài thêm một số module quan trọng đi cùng với express như:
 ```
 npm install body-parser --save
 npm install cookie-parser --save
 npm install multer --save
 ```
-- Tạo file `server.js` để bắt đầu lập trình, có nội dung như sau:
+Tạo file `server.js` để bắt đầu lập trình, có nội dung như sau:
 ```js
 var express = require("express");
 var app = express();
@@ -54,7 +54,7 @@ var server = app.listen(3000, function() {
 	console.log(`Health care at http://localhost:${port}`);
 });
 ```
-- Khơi chạy server bằng lệnh:
+Khởi chạy server bằng lệnh:
 ```
 node server.js
 ```
@@ -90,7 +90,7 @@ Sử dụng **MongoDB Atlas** để lưu trữ dữ liệu. **MongoDB Atlas** l�
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="50" height="70"/> 
   </a>
   <a href="https://handlebarsjs.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/leanhducprovn/health-care-install/main/images/handlebarsjs.png" alt="handlebars" width="100" height="70"/> 
+    <img src="https://raw.githubusercontent.com/leanhducprovn/health-care-install/main/src/public/images/handlebarsjs.png" alt="handlebars" width="100" height="70"/> 
   </a>
 </p>
 
@@ -150,4 +150,25 @@ Be sure to have your pages set up with the latest design and development standar
 </html>
 ```
 For next steps, visit the  [Layout docs](https://getbootstrap.com/docs/5.1/layout/grid/)  or  [our official examples](https://getbootstrap.com/docs/5.1/examples/)  to start laying out your site’s content and components.
+#### Handlebars
+Có nhiều cách để cài đặt Handlebars, tùy thuộc vào ngôn ngữ lập trình và môi trường bạn đang sử dụng.
+
+Việc triển khai tham chiếu của Handlebars được viết bằng JavaScript. Nó được cài đặt phổ biến nhất bằng cách sử dụng `npm` hoặc `yarn`:
+
+```
+npm install handlebars
+# or
+yarn add handlebars
+```
+Sau đó, bạn có thể sử dụng Handlebars bằng `require`
+```js
+const handlebars = require("handlebars");
+const hbs = handlebars.create({
+	extname: ".hbs",
+});
+```
+Sử template engine:
+```js
+app.engine("hbs", hbs.engine);
+```
 ### Mobile development
