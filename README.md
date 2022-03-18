@@ -205,3 +205,33 @@ https://www.heroku.com/
 
 **Note**: *Có thể thêm tên tên miền tuỳ chỉnh trong phần cài đặt!*
 ### Mobile development
+#### Flutter
+Flutter là một SDK phát triển ứng dụng di động nguồn mở được tạo ra bởi Google. Nó được sử dụng để phát triển ứng ứng dụng cho Android và iOS, cũng là phương thức chính để tạo ứng dụng cho Google Fuchsia.
+##### Get the Flutter SDK
+Download the following installation bundle to get the latest stable release of the Flutter SDK:
+<a href="https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_2.10.3-stable.zip" target="_blank" rel="noreferrer"> 
+	<img src="https://img.shields.io/badge/Downloads-6.9M/week-success" alt="flutter_macos_2.10.3-stable.zip" width="200" height=""/> 
+</a>
+
+Extract the file in the desired location, for example:
+```
+cd ~/development
+unzip ~/Downloads/flutter_macos_2.10.3-stable.zip
+```
+Add the `flutter` tool to your path:
+```
+export PATH="$PATH:`pwd`/flutter/bin"
+```
+##### Create and run a simple Flutter app
+Create a new Flutter app by running the following from the command line:
+```
+$ flutter create my_app
+```
+A  `my_app`  directory is created, containing Flutter’s starter app. Enter this directory: 
+```
+cd my_app
+```
+To launch the app in the Simulator, ensure that the Simulator is running and enter:
+```
+flutter run
+```
