@@ -7,31 +7,31 @@
 -   Cài đặt NodeJS trên Window và MacOS
     Truy cập vào website chính thức của NodeJS, tải bản cài đặt mới nhất về máy tính và thực hiện cài đặt như bình thường
 
-```js
+```
 https://nodejs.org/
 ```
 
 -   Để kiểm tra cài đặt đã thành công hay chưa, bằng cách gõ lệnh:
 
-```js
-node - v;
+```
+node -v
 ```
 
 -   Để kiểm tra NPM - Công cụ quản lý package của NodeJS đã cài đặt thành công hay chưa, bằng cách gõ lệnh:.
 
-```js
-npm - v;
+```
+npm -v
 ```
 
 -   Tạo thư mục chứa project
 
-```js
+```
 mkdir health-care
 ```
 
 -   Tạo file `package.json` trong thư mục gốc của project
 
-```js
+```
 npm init
 ```
 
@@ -39,13 +39,13 @@ npm init
 
 -   Để cài đặt Express framework sử dụng npm như sau:
 
-```js
+```
 npm install express --save
 ```
 
 -   Cài thêm một số module quan trọng đi cùng với express như:
 
-```js
+```
 npm install body-parser --save
 npm install cookie-parser --save
 npm install multer --save
@@ -69,7 +69,7 @@ var server = app.listen(3000, function () {
 
 -   Khơi chạy server bằng lệnh:
 
-```js
+```
 node server.js
 ```
 
