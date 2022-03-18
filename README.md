@@ -1,7 +1,6 @@
 ## Health Care
-- [Backend development](#backend-development)
-	- [NodeJS](#nodejs)
-	- [Express](#express)
+Cài đặt phần mềm quản lý sức khoẻ mẹ và bé.
+
 ### Backend development
 <p align="left">  
   <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"> 
