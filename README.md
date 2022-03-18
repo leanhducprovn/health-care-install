@@ -209,6 +209,7 @@ https://www.heroku.com/
 Flutter là một SDK phát triển ứng dụng di động nguồn mở được tạo ra bởi Google. Nó được sử dụng để phát triển ứng ứng dụng cho Android và iOS, cũng là phương thức chính để tạo ứng dụng cho Google Fuchsia.
 ##### Get the Flutter SDK
 Download the following installation bundle to get the latest stable release of the Flutter SDK:
+
 <a href="https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_2.10.3-stable.zip" target="_blank" rel="noreferrer"> 
 	<img src="https://img.shields.io/badge/Downloads-6.9M/week-success" alt="flutter_macos_2.10.3-stable.zip" width="200" height=""/> 
 </a>
@@ -222,6 +223,7 @@ Add the `flutter` tool to your path:
 ```
 export PATH="$PATH:`pwd`/flutter/bin"
 ```
+This command sets your  `PATH`  variable for the  _current_  terminal window only. To permanently add Flutter to your path, see  [Update your path](https://docs.flutter.dev/get-started/install/macos#update-your-path).
 ##### Create and run a simple Flutter app
 Create a new Flutter app by running the following from the command line:
 ```
@@ -235,3 +237,49 @@ To launch the app in the Simulator, ensure that the Simulator is running and ent
 ```
 flutter run
 ```
+#### Flutter module
+
+##### Webview
+With Flutter:
+```
+flutter pub add webview_flutter
+```
+This will add a line like this to your package's pubspec.yaml (and run an implicit `flutter pub get`):
+```yaml
+dependencies:
+	webview_flutter: ^3.0.1
+```
+Alternatively, your editor might support `flutter pub get`. Check the docs for your editor to learn more.
+
+Now in your Dart code, you can use:
+```dart
+import 'package:webview_flutter/webview_flutter.dart';
+```
+##### Cookie
+With Flutter:
+```
+dart pub add cookie
+```
+This will add a line like this to your package's pubspec.yaml (and run an implicit `flutter pub get`):
+```yaml
+dependencies:
+	cookie: ^0.0.4
+```
+Alternatively, your editor might support `flutter pub get`. Check the docs for your editor to learn more.
+
+Now in your Dart code, you can use:
+```dart
+import 'package:cookie/cookie.dart';
+```
+##### Material
+Import library:
+```dart
+import 'package:flutter/material.dart';
+```
+
+##### References
+- https://pub.dev/packages/webview_flutter
+- https://codelabs.developers.google.com/codelabs/flutter-webview
+- https://docs.flutter.dev/development/platform-integration/platform-views
+
+>  Copyright © [Lê Anh Đức](https://www.code.pro.vn/)
