@@ -73,6 +73,12 @@ var server = app.listen(3000, function() {
 node server.js
 ```
 
+#### MVC paradigm
+
+Tiếp tục phát triển theo mô hình MVC
+![MVC paradigm](https://camo.githubusercontent.com/afe2798199dae8a62dbe378fda06f6b1356f6e95a9704c7019023c0eb1822abd/68747470733a2f2f692e696d6775722e636f6d2f36306c494f6c692e706e67)
+**Note**: _Cấu trúc lại thư mục theo chuẩn MVC._
+
 ### Frontend development
 
 ### Mobile development
