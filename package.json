@@ -1,0 +1,19 @@
+{
+  "name": "health-care-install",
+  "version": "1.0.0",
+  "description": "Health care install",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leanhducprovn/health-care-install.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leanhducprovn/health-care-install/issues"
+  },
+  "homepage": "https://github.com/leanhducprovn/health-care-install#readme"
+}
