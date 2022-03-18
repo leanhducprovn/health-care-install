@@ -171,4 +171,37 @@ Sử template engine:
 ```js
 app.engine("hbs", hbs.engine);
 ```
+### Deploy
+#### GitHub
+GitHub là một dịch vụ cung cấp kho lưu trữ mã nguồn Git dựa trên nền web cho các dự án phát triển phần mềm.
+
+**Git** hỗ trợ các hệ điều hành **Windows, Mac OS, Linux (Ubuntu, ..)**, để download bạn có thể truy cập vào trang chủ của **Git**:
+```
+https://git-scm.com
+```
+Push code lên GitHub
+```
+echo "# push" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/leanhducprovn/push.git
+git push -u origin main
+```
+**Note**: *Trên đây là ví dụ minh hoạ!*
+#### Heroku
+Heroku là một nền tảng đám mây như một dịch vụ hỗ trợ một số ngôn ngữ lập trình.
+
+Truy cập trang chủ của **Heroku** và đăng ký tài khoản:
+```
+https://www.heroku.com/
+```
+**Các bước deploy**:
+- Chọn **New** → chọn **Create new app** → đặt tên **App** → chọn **Create app** 
+- Trong **Deployment method** chọn **GitHub**
+- Trong **Connect to GitHub** chọn **Tài khoản** và **Repo** → chọn **Connect** → chọn **Enable Automatic Deploys**
+- Trong **Manual deploy** → chọn **Deploy Branch** → Thành công!
+
+**Note**: *Có thể thêm tên tên miền tuỳ chỉnh trong phần cài đặt!*
 ### Mobile development
