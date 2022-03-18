@@ -119,6 +119,7 @@ Bootstrap is developed _mobile first_, a strategy in which we optimize code for 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 ##### Starter template
+Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:
 ```html
 <!doctype html>
 <html lang="en">
@@ -148,4 +149,5 @@ Bootstrap is developed _mobile first_, a strategy in which we optimize code for 
   </body>
 </html>
 ```
+For next steps, visit the  [Layout docs](https://getbootstrap.com/docs/5.1/layout/grid/)  or  [our official examples](https://getbootstrap.com/docs/5.1/examples/)  to start laying out your site’s content and components.
 ### Mobile development
