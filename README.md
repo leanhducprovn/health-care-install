@@ -1,15 +1,14 @@
 ## Health Care
 
 ### Backend development
-
 <p align="left">  
   <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"> 
     <img src="https://raw.githubusercontent.com/leanhducprovn/health-care-install/main/images/backend.png" alt="backend development" width="" height="130"/> 
   </a>
- </p>
+</p>
  
 #### NodeJS
- - Cài đặt NodeJS trên Window hoặc MacOS
+- Cài đặt NodeJS trên Window hoặc MacOS
 Truy cập vào website chính thức của NodeJS, tải bản cài đặt mới nhất về máy tính và thực hiện cài đặt như bình thường
 ```
 https://nodejs.org/
@@ -47,23 +46,20 @@ var express = require("express");
 var app = express();
 
 app.get("/", function(req, res) {
-    res.send("Health Care");
+	res.send("Health Care");
 });
 
 var server = app.listen(3000, function() {
-    var port = server.address().port;
-    console.log(`Health care at http://localhost:${port}`);
+	var port = server.address().port;
+	console.log(`Health care at http://localhost:${port}`);
 });
-
 ```
 - Khơi chạy server bằng lệnh:
 ```
-
 node server.js
-
 ```
 #### MVC paradigm
-Tiếp tục phát triển theo mô hình MVC
+Tiếp tục phát triển theo mô hình MVC 
 ![MVC paradigm](https://camo.githubusercontent.com/afe2798199dae8a62dbe378fda06f6b1356f6e95a9704c7019023c0eb1822abd/68747470733a2f2f692e696d6775722e636f6d2f36306c494f6c692e706e67)
 **Note**: *Cấu trúc lại thư mục theo chuẩn MVC.*
 ### Database development
@@ -80,23 +76,35 @@ Sử dụng **MongoDB Atlas** để lưu trữ dữ liệu. **MongoDB Atlas** l�
 ![Thiết kế cơ sở dữ liệu](https://camo.githubusercontent.com/e80715b4244b5c6cc4538c6152ae317d400a77832ed50f6e58e9d990bafe4918/68747470733a2f2f692e696d6775722e636f6d2f7166416c6250312e706e67)
 ***Note**: Thiết kế cơ sở dữ liệu phù hợp với yêu cầu bài toán.*
 ### Frontend development
-<p align="left">
-  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="50" height="70"/>
-  </a>
-  <a href="https://www.w3schools.com/html/" target="_blank" rel="noreferrer">
+<p align="left">  
+  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="50" height="70"/> 
+  </a> 
+  <a href="https://www.w3schools.com/html/" target="_blank" rel="noreferrer"> 
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="50" height="70"/>
-  </a>
-  <a href="https://sass-lang.com" target="_blank" rel="noreferrer">
+  </a>  
+  <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> 
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="50" height="70"/>
   </a>
-  <a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="50" height="70"/>
+  <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="50" height="70"/> 
   </a>
-  <a href="https://handlebarsjs.com/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/leanhducprovn/health-care-install/main/images/handlebarsjs.png" alt="handlebars" width="100" height="70"/>
+  <a href="https://handlebarsjs.com/" target="_blank" rel="noreferrer"> 
+    <img src="https://raw.githubusercontent.com/leanhducprovn/health-care-install/main/images/handlebarsjs.png" alt="handlebars" width="100" height="70"/> 
   </a>
 </p>
 
-### Mobile development
+#### Bootstrap
+Copy-paste the stylesheet `<link>` into your `<head>` before all other stylesheets to load our CSS.
+```html
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 ```
+Many of our components require the use of JavaScript to function. Specifically, they require our own JavaScript plugins and [Popper](https://popper.js.org/). Place **one of the following  `<script>`** near the end of your pages, right before the closing `</body>` tag, to enable them.
+
+Include every Bootstrap JavaScript plugin and dependency with one of our two bundles. Both `bootstrap.bundle.js` and `bootstrap.bundle.min.js` include [Popper](https://popper.js.org/) for our tooltips and popovers. For more information about what’s included in Bootstrap, please see our [contents](https://getbootstrap.com/docs/5.1/getting-started/contents/#precompiled-bootstrap) section.
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+```
+
+### Mobile development
