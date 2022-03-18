@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/leanhducprovn/health-care-install/issues"
   },
-  "homepage": "https://github.com/leanhducprovn/health-care-install#readme"
+  "homepage": "https://github.com/leanhducprovn/health-care-install#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.3",
+    "multer": "^1.4.4"
+  }
 }
