@@ -66,6 +66,19 @@ node server.js
 Tiếp tục phát triển theo mô hình MVC
 ![MVC paradigm](https://camo.githubusercontent.com/afe2798199dae8a62dbe378fda06f6b1356f6e95a9704c7019023c0eb1822abd/68747470733a2f2f692e696d6775722e636f6d2f36306c494f6c692e706e67)
 **Note**: *Cấu trúc lại thư mục theo chuẩn MVC.*
+### Database development
+#### MongoDB
+Sử dụng **MongoDB Atlas** để lưu trữ dữ liệu. **MongoDB Atlas** là **cloud database** của MongoDB được ra mắt vào năm 2016 chạy trên AWS, Microsoft Azure và Google Cloud Platform.
+<p align="left">
+	<a href="https://www.mongodb.com/" target="_blank"  rel="noreferrer">
+		<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="130"/>
+	</a>
+</p>
+
+Để sử dụng **Atlas** truy cập [vào đây](https://www.mongodb.com/cloud/atlas) và nhấn nút **Try Free**, sau đó đăng ký tài khoản để bắt đầu!
+#### Database design
+![Thiết kế cơ sở dữ liệu](https://camo.githubusercontent.com/e80715b4244b5c6cc4538c6152ae317d400a77832ed50f6e58e9d990bafe4918/68747470733a2f2f692e696d6775722e636f6d2f7166416c6250312e706e67)
+***Note**: Thiết kế cơ sở dữ liệu phù hợp với yêu cầu bài toán.*
 ### Frontend development
 <p align="left">
   <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
