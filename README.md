@@ -245,7 +245,7 @@ With Flutter:
 flutter pub add webview_flutter
 ```
 This will add a line like this to your package's pubspec.yaml (and run an implicit `flutter pub get`):
-```json
+```js
 dependencies:
 	webview_flutter: ^3.0.1
 ```
@@ -261,7 +261,7 @@ With Flutter:
 dart pub add cookie
 ```
 This will add a line like this to your package's pubspec.yaml (and run an implicit `flutter pub get`):
-```json
+```js
 dependencies:
 	cookie: ^0.0.4
 ```
